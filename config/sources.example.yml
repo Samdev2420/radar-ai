@@ -1,0 +1,28 @@
+# Copy this file to config/sources.yml and declare YOUR sources.
+# The /radar skill scans these to build your digest.
+# Each source has a `method`: webfetch | websearch | github_trending
+
+sources:
+  # Fetch and read a specific page.
+  - name: Anthropic News
+    method: webfetch
+    url: https://www.anthropic.com/news
+    priority: high          # high | medium | low (optional, default: medium)
+    tags: [ai, claude]      # optional
+
+  # Run a web search query.
+  - name: Claude feature updates
+    method: websearch
+    query: "Claude new feature update"   # required when method = websearch
+    priority: medium
+    tags: [ai]
+
+  # Scan GitHub trending (daily).
+  - name: GitHub Trending (daily)
+    method: github_trending
+    url: https://github.com/trending?since=daily
+    priority: medium
+    tags: [dev, oss]
+
+# Multi-domain: replace everything above with your own sources to watch
+# any topic (crypto, biotech, design...). The skill does not assume AI.
