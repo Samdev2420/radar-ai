@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussions
+    url: https://github.com/Samdev2420/radar-ai/discussions
+    about: Ask questions, share ideas, or discuss usage with the community.
+  - name: Documentation
+    url: https://github.com/Samdev2420/radar-ai#readme
+    about: Read the README and docs before opening an issue.
+  - name: Report a security vulnerability
+    url: https://github.com/Samdev2420/radar-ai/security/advisories/new
+    about: Privately report a security vulnerability via GitHub Security Advisories.

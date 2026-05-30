@@ -1,0 +1,67 @@
+name: Propose a new source method
+description: Propose a new source method (for example rss) for the radar plugin to scan.
+title: "[Source]: "
+labels: ["source-method", "enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a new source **method** the plugin can scan
+        (for example: rss, sitemap, json-api). A method defines how a class of
+        sources is fetched and parsed, not a single specific website.
+  - type: input
+    id: method-name
+    attributes:
+      label: Method name
+      description: The identifier used in sources.yml (lowercase, no spaces).
+      placeholder: rss
+    validations:
+      required: true
+  - type: textarea
+    id: what-it-scans
+    attributes:
+      label: What it scans
+      description: Describe what this method fetches and what kind of items it produces.
+      placeholder: Fetches an RSS or Atom feed and produces one item per feed entry (title, link, published date, summary).
+    validations:
+      required: true
+  - type: textarea
+    id: required-config
+    attributes:
+      label: Required config fields
+      description: List the configuration fields this method needs, one per line.
+      placeholder: |
+        - url: the feed URL (required)
+        - max_items: maximum entries to keep (optional, default 10)
+    validations:
+      required: true
+  - type: textarea
+    id: example-entry
+    attributes:
+      label: Example sources.yml entry
+      description: Show a complete example of how this method would be configured. This will be formatted as code.
+      render: yaml
+      placeholder: |
+        sources:
+          - name: Example Feed
+            method: rss
+            url: https://example.com/feed.xml
+            max_items: 10
+    validations:
+      required: true
+  - type: dropdown
+    id: willing-to-pr
+    attributes:
+      label: Are you willing to submit a pull request to implement this method?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Any other details, edge cases, or references.
+    validations:
+      required: false

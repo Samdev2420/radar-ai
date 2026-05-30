@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a problem with the radar plugin so it can be fixed.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. Please fill out the
+        sections below so the issue can be reproduced and resolved quickly.
+
+        Before submitting, search existing issues to avoid duplicates.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+      placeholder: When I run /radar, the digest is generated but the scores are missing.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps needed to reproduce the behavior.
+      placeholder: |
+        1. Configure sources.yml with '...'
+        2. Run /radar
+        3. Open the generated digest
+        4. See the error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: The digest should list 5-10 scored items.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened. Include logs or output if relevant.
+      placeholder: The digest was empty.
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Claude Code version and operating system.
+      placeholder: "Claude Code 2.x.x, macOS 15 / Windows 11 / Ubuntu 24.04"
+    validations:
+      required: true
+  - type: checkboxes
+    id: no-personal-data
+    attributes:
+      label: Privacy confirmation
+      description: This plugin is public. Please make sure your report contains no private information.
+      options:
+        - label: I confirm this report contains no personal data (no real names, email addresses, absolute local file paths, private project names, or secrets).
+          required: true

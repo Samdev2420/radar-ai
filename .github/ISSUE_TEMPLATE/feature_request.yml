@@ -1,0 +1,42 @@
+name: Feature request
+description: Suggest an idea or improvement for the radar plugin.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Please describe the problem you
+        are trying to solve before describing a solution, so the proposal can
+        be evaluated on its merits.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem does this feature solve? Why is it needed?
+      placeholder: I want to track a source that the current scan methods do not cover.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: A clear and concise description of what you want to happen.
+      placeholder: Add a new option to filter items by minimum score.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative solutions or features you have considered.
+      placeholder: I considered post-processing the digest manually, but that is error-prone.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context, screenshots, or examples here.
+    validations:
+      required: false
