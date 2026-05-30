@@ -1,0 +1,23 @@
+# Copy this file to config/radar.config.yml and adapt it.
+# radar.config.yml is gitignored: your settings stay private.
+
+# Where digests are written (must stay inside the project folder).
+output_dir: ./digests
+# Dedup index file (generated, gitignored).
+index_file: ./digests/index.md
+# Digest language (en | fr | ...). Default: en
+language: en
+# Max items per digest. Default: 10
+max_items: 10
+
+# Scoring rubric — fully driven by this config (multi-domain ready).
+scoring:
+  must_see: "Direct impact on one of your projects OR breaking change OR major new model/feature"
+  interesting: "Relevant to your domain, no immediate action needed"
+  bonus: "Nice-to-know, enriching"
+
+# Digest categories — rename freely for your own domain.
+categories:
+  - AI Tools & Updates
+  - Dev Tools & Workflow
+  - Methodology & Process
