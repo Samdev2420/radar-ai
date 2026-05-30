@@ -1,0 +1,23 @@
+# User's personal config — NEVER commit
+config/sources.yml
+config/radar.config.yml
+*.local
+.claude/
+.claude/settings.local.json
+
+# Generated digests and dedup index (user data)
+digests/
+**/index.md
+
+# Secrets
+*.env
+.env*
+*.key
+*.pem
+*secret*
+*secrets*
+
+# Session / tooling artifacts
+.playwright-mcp/
+.DS_Store
+Thumbs.db
