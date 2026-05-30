@@ -1,0 +1,10 @@
+{
+  "name": "radar",
+  "version": "1.0.0",
+  "description": "Daily tech-watch as a Claude Code skill: turn any list of sources into a deduplicated, prioritized Markdown digest.",
+  "author": {
+    "name": "Samy Farhat"
+  },
+  "license": "MIT",
+  "keywords": ["tech-watch", "digest", "ai-news", "productivity", "agentic"]
+}

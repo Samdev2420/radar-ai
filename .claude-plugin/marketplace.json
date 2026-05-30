@@ -1,0 +1,13 @@
+{
+  "name": "radar-ai",
+  "owner": {
+    "name": "Samy Farhat"
+  },
+  "plugins": [
+    {
+      "name": "radar",
+      "source": "./",
+      "description": "Daily tech-watch digest skill for Claude Code."
+    }
+  ]
+}
