@@ -9,6 +9,7 @@
 ## {{Category}}
 
 ### [{{TAG}}] {{Title}}
+
 - **Source**: [{{text}}]({{url}})
 - **What it is**: {{2-3 plain-language sentences, no jargon — assume the reader has never heard of it}}
 - **Why it matters to you**: {{connect to the reader's project / stack / interest / role by name; concrete change for them}}

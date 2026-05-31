@@ -1,0 +1,16 @@
+{
+  // Markdownlint configuration for radar-ai.
+  "config": {
+    "default": true,
+    // Line length is a style choice; prose and third-party text (the
+    // Contributor Covenant) use long lines intentionally.
+    "MD013": false,
+    // Issue/PR templates legitimately start with a level-2 heading.
+    "MD041": false,
+    // Allow duplicate headings when they are not siblings (e.g. CHANGELOG).
+    "MD024": { "siblings_only": true }
+  },
+  // CODE_OF_CONDUCT.md is the canonical Contributor Covenant 2.1 text; we keep
+  // it verbatim rather than reformatting third-party content.
+  "ignores": ["CODE_OF_CONDUCT.md"]
+}

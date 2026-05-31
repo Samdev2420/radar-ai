@@ -13,6 +13,7 @@
 ## AI Tools & Updates
 
 ### [model] Example Foundation Model v3 released
+
 - **Source**: [example.com/blog/model-v3](https://example.com/blog/model-v3)
 - **What it is**: A company that rents out AI models released a new version. It can
   read much longer documents at once and costs less for each piece of text it
@@ -32,6 +33,7 @@
 ## Dev Tools & Workflow
 
 ### [cli] Example trending CLI for local AI agents
+
 - **Source**: [github.com/example/agent-cli](https://github.com/example/agent-cli)
 - **What it is**: A free, open-source command-line tool (you run it by typing
   commands in a terminal) that automates repetitive coding-assistant tasks. It
@@ -51,6 +53,7 @@
 ## Methodology & Process
 
 ### [process] Example write-up on spec-driven agent development
+
 - **Source**: [example.com/notes/spec-driven-agents](https://example.com/notes/spec-driven-agents)
 - **What it is**: A short guide describing a way to build features with coding
   assistants: first write a plain description of what you want (a "spec"), turn

@@ -14,10 +14,13 @@ sources (see below).
 ## Method 1 — Install as a Claude Code plugin (recommended)
 
 1. Add the marketplace:
+
    ```text
    /plugin marketplace add Samdev2420/radar-ai
    ```
+
 2. Install the plugin:
+
    ```text
    /plugin install radar
    ```
@@ -27,10 +30,13 @@ This installs the `radar` skill and makes `/radar` available in any project.
 ## Method 2 — Manual install
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Samdev2420/radar-ai.git
    ```
+
 2. Copy the skill into your Claude Code skills directory:
+
    ```bash
    cp -r radar-ai/skills/radar ~/.claude/skills/radar
    ```

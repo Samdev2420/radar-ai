@@ -26,6 +26,7 @@ Resolve every setting in this order (first match wins):
    the user's project, so never assume the config lives in the cwd.
 
 Load:
+
 - `sources.yml` → the `sources` list (each entry typed by `method`).
 - `radar.config.yml` → `output_dir`, `index_file`, `language`, `max_items`,
   `profile`, `scoring`, `categories`.
