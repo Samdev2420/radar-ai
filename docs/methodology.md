@@ -17,6 +17,15 @@ The rubric is plain text, so you can rewrite it for any domain. radar applies
 your wording when deciding what to keep and how to rank it. `priority` on each
 source acts as an additional weighting hint.
 
+### Profile-aware ranking
+
+When you declare a `profile` (see [configuration.md](configuration.md)), radar
+combines the rubric with your context. An item that touches one of your
+`projects` — its stack, focus, or a dependency it relies on — is promoted, and a
+direct project impact is treated as `must_see`. Items matching your `interests`
+rank above items that match neither a project nor an interest. This is what
+turns a generic feed into a digest about *your* work.
+
 ## Categorization
 
 Items are grouped under the `categories` you declare in config. Defaults are
@@ -35,6 +44,18 @@ radar keeps a permanent index of everything it has already published
 
 This is why the same announcement never appears across two days, even if a
 source re-lists it.
+
+## Explain simply, then make it personal
+
+A digest is only useful if you actually understand each item and can see why it
+concerns you. Every item is written in two layers:
+
+- **What it is** — a plain-language explanation with no jargon, written for
+  someone who has never heard of the product. Unavoidable terms are glossed in a
+  few words.
+- **Why it matters to you** — when a profile is set, radar names the specific
+  project, stack, interest, or role affected and states the concrete change for
+  you, rather than a generic benefit.
 
 ## Quality over quantity
 

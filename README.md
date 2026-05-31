@@ -2,7 +2,7 @@
 
 **Your daily tech-watch, scored and actionable — as a Claude Code skill.**
 
-Turn any list of sources into a deduplicated, prioritized Markdown digest. Multi-domain, config-driven, zero hardcoded paths.
+Turn any list of sources into a deduplicated, prioritized Markdown digest that explains each item in plain language and tells you why it matters *for your projects*. Multi-domain, config-driven, zero hardcoded paths.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-7c3aed.svg)](https://docs.claude.com/en/docs/claude-code)
@@ -13,7 +13,7 @@ Turn any list of sources into a deduplicated, prioritized Markdown digest. Multi
 
 ![radar generating a daily digest](assets/demo.png)
 
-*radar reads your `sources.yml`, scans each source, deduplicates against the running index, scores the results, and writes a clean Markdown digest.*
+*radar reads your `sources.yml`, scans each source, deduplicates against the running index, scores the results against your profile, and writes a clean Markdown digest — each item explained simply, with a personalized "why it matters to you".*
 
 ## Quick start
 
@@ -63,10 +63,32 @@ sources:
 
 Swap these for your own sources to watch any topic — the skill makes no assumptions about the domain. The full starter file is [config/sources.example.yml](config/sources.example.yml), and a sample output digest is in [examples/2026-05-30-digest-example.md](examples/2026-05-30-digest-example.md).
 
+## Make it yours — the adaptive profile
+
+The difference between a feed and a digest is *relevance to you*. In `config/radar.config.yml` you can declare a `profile` — your role, interests, and projects:
+
+```yaml
+profile:
+  role: "Solo founder building developer tools"
+  interests: [AI agents, developer productivity, open source]
+  projects:
+    - name: my-web-app
+      stack: "React, Supabase"
+      focus: "SaaS dashboard"
+```
+
+With a profile set, radar does two extra things on every item:
+
+- **Explains it simply** — a jargon-free "What it is", written for someone who has never heard of the product.
+- **Connects it to you** — a "Why it matters to you" that names the actual project, stack, or interest affected ("this cuts your `my-web-app` token costs"), and ranks items that touch your projects to the top.
+
+Leave `profile` out and radar runs in generic mode. See a full personalized digest in [examples/2026-05-30-digest-example.md](examples/2026-05-30-digest-example.md).
+
 ## Customization
 
 radar reads a second file, `config/radar.config.yml`, where you control the output. You can tune:
 
+- **Profile** — your role, interests, and projects, used to rank and personalize.
 - **Scoring** — how each item is ranked by relevance and impact.
 - **Categories** — the sections your digest is organized into.
 - **Language** — the language the digest is written in.

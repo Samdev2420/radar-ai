@@ -10,7 +10,31 @@ language: en
 # Max items per digest. Default: 10
 max_items: 10
 
+# Your profile — the adaptive context. radar uses it to:
+#   1. score relevance (an item touching one of your projects ranks higher)
+#   2. write a personalized "Why it matters to you" that names the project,
+#      role, or interest actually concerned.
+# Leave this block out and radar produces a generic, non-personalized digest.
+profile:
+  # Who you are — one short line. Drives tone and what counts as relevant.
+  role: "Solo founder building developer tools"
+  # Topics you care about. Used to rank and to explain relevance.
+  interests:
+    - AI agents
+    - developer productivity
+    - open source
+  # Your projects/stack. radar maps each news item to these and tells you
+  # which one it affects, in plain language.
+  projects:
+    - name: my-cli-tool
+      stack: "TypeScript, Node.js"
+      focus: "command-line developer tooling"
+    - name: my-web-app
+      stack: "React, Supabase"
+      focus: "SaaS dashboard"
+
 # Scoring rubric — fully driven by this config (multi-domain ready).
+# radar combines this rubric WITH your profile above when ranking items.
 scoring:
   must_see: "Direct impact on one of your projects OR breaking change OR major new model/feature"
   interesting: "Relevant to your domain, no immediate action needed"

@@ -45,8 +45,27 @@ A single `sources` list. Each entry is one source, typed by its `method`.
 | `index_file` | No | string (path) | `./digests/index.md` | Dedup index, generated and gitignored |
 | `language` | No | string | `en` | Digest output language (`en`, `fr`, ...) |
 | `max_items` | No | integer | `10` | Maximum items per digest |
+| `profile` | No | map | none (generic mode) | Your adaptive context — drives personalized ranking and explanations |
 | `scoring` | No | map | shipped defaults | Rubric strings: `must_see`, `interesting`, `bonus` |
 | `categories` | No | list of strings | shipped defaults | Digest section names, rename for your domain |
+
+### `profile` — the adaptive context
+
+`profile` is what makes a digest *yours*. When set, radar uses it both to
+**rank** items (anything touching your projects or interests rises to the top)
+and to **explain** them (each item gets a "Why it matters to you" that names the
+specific project, stack, interest, or role it affects). Leave `profile` out and
+radar runs in generic mode: plain explanations and a general benefit, with no
+personalization.
+
+| Sub-field | Required | Type | Notes |
+|-----------|----------|------|-------|
+| `role` | No | string | One line on who you are. Shapes tone and what counts as "actionable" |
+| `interests` | No | list of strings | Topics you follow. Used to rank and to phrase relevance |
+| `projects` | No | list of maps | Your projects. Each item is mapped to these by name |
+| `projects[].name` | No | string | Project name, quoted back to you in "Why it matters to you" |
+| `projects[].stack` | No | string | Tech/stack, so radar can match a tool or release to it |
+| `projects[].focus` | No | string | What the project does, to judge real impact |
 
 ## What happens if a field is missing or wrong
 

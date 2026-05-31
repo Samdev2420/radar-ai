@@ -1,10 +1,12 @@
 # Tech Watch — 2026-05-30
 
 > Daily digest | 3 items | Scan OK
+> Tailored for: Solo founder building developer tools — projects: my-cli-tool (TypeScript/Node.js), my-web-app (React/Supabase)
 > Sources: Example AI News, Example Web Search, GitHub Trending (daily)
 
-> Note: this is a sample digest with fictional items, shown to illustrate the
-> output format. Run `/radar` with your own `sources.yml` to generate a real one.
+> Note: this is a sample digest with fictional items and a fictional profile,
+> shown to illustrate the output format. Run `/radar` with your own
+> `sources.yml` and `profile` to generate a real, personalized one.
 
 ---
 
@@ -12,13 +14,16 @@
 
 ### [model] Example Foundation Model v3 released
 - **Source**: [example.com/blog/model-v3](https://example.com/blog/model-v3)
-- **Summary**: A vendor announced the third version of its foundation model,
-  with a larger context window and a lower price per token. An updated SDK ships
-  alongside it, backward compatible with the previous version.
-- **Why it matters**: Cheaper tokens and a bigger context window make
-  long-document workflows affordable without changing your code.
-- **Usable now?**: Yes — available via the API today.
-- **Quick start**: Bump the model name in your client config and re-run your
+- **What it is**: A company that rents out AI models released a new version. It can
+  read much longer documents at once and costs less for each piece of text it
+  processes (priced per "token" — roughly a word). Existing code keeps working;
+  nothing to rewrite.
+- **Why it matters to you**: Your **my-web-app** dashboard calls a model to
+  summarize user data. Switching to v3 lowers that bill and lets you feed in
+  whole reports instead of chopping them up — a direct cost and quality win for
+  the feature you already ship.
+- **Usable now?**: Yes — available today; just change the model name.
+- **Quick start**: Update the model name in your client config and re-run your
   existing calls.
 - **Tags**: ai, llm, api
 
@@ -28,11 +33,14 @@
 
 ### [cli] Example trending CLI for local AI agents
 - **Source**: [github.com/example/agent-cli](https://github.com/example/agent-cli)
-- **Summary**: An open-source CLI that orchestrates local coding agents reached
-  the top of GitHub trending. It wraps common agent loops behind a single
-  command and supports custom tool definitions.
-- **Why it matters**: Lowers the barrier to running repeatable agent workflows
-  from the terminal instead of wiring everything by hand.
+- **What it is**: A free, open-source command-line tool (you run it by typing
+  commands in a terminal) that automates repetitive coding-assistant tasks. It
+  bundles common "agent" steps behind a single command so you do not wire them
+  up yourself.
+- **Why it matters to you**: It is built in TypeScript/Node.js — the exact stack
+  of your **my-cli-tool** project. You could reuse its command structure as a
+  reference, or even depend on it, instead of building that orchestration layer
+  from scratch.
 - **Usable now?**: Yes — install from the package registry.
 - **Quick start**: Install the package, point it at a project folder, and run
   the default workflow.
@@ -44,11 +52,13 @@
 
 ### [process] Example write-up on spec-driven agent development
 - **Source**: [example.com/notes/spec-driven-agents](https://example.com/notes/spec-driven-agents)
-- **Summary**: A practitioner shared a workflow for building features with
-  coding agents: write a spec, derive a step-by-step plan, then execute with
-  review checkpoints. The post includes a reusable checklist.
-- **Why it matters**: Turns ad-hoc prompting into a repeatable process, which
-  reduces rework on multi-step tasks.
+- **What it is**: A short guide describing a way to build features with coding
+  assistants: first write a plain description of what you want (a "spec"), turn
+  it into a step-by-step plan, then build it with checkpoints where you review.
+- **Why it matters to you**: As a solo founder, rework is your most expensive
+  tax. This habit catches mistakes before code is written, which is exactly the
+  kind of leverage that keeps a one-person team shipping fast across both your
+  projects.
 - **Usable now?**: Info only — adopt the practice, no tool required.
 - **Tags**: methodology, agents, process
 

@@ -1,6 +1,7 @@
 # Tech Watch — {{DATE}}
 
 > Daily digest | {{COUNT}} items | Scan OK
+> Tailored for: {{PROFILE_ROLE}} — {{PROFILE_FOCUS}}
 > Sources: {{SOURCES_LIST}}
 
 ---
@@ -9,8 +10,8 @@
 
 ### [{{TAG}}] {{Title}}
 - **Source**: [{{text}}]({{url}})
-- **Summary**: {{2-3 actionable sentences}}
-- **Why it matters**: {{concrete benefit, plain language, no jargon}}
+- **What it is**: {{2-3 plain-language sentences, no jargon — assume the reader has never heard of it}}
+- **Why it matters to you**: {{connect to the reader's project / stack / interest / role by name; concrete change for them}}
 - **Usable now?**: {{Yes / Not yet / Info only}} — {{details}}
 - **Quick start**: {{1-2 actionable sentences, omit if N/A}}
 - **Tags**: {{tags}}
