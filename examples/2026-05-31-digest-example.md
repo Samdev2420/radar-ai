@@ -3,7 +3,7 @@
 > Daily digest | 3 items | Scan OK
 > Tailored for: Solo founder building developer tools — projects: my-cli-tool (TypeScript/Node.js), my-web-app (React/Supabase)
 > Sources: Example AI News, Example Web Search, GitHub Trending (daily)
-
+>
 > Note: this is a sample digest with fictional items and a fictional profile,
 > shown to illustrate the output format. Run `/radar` with your own
 > `sources.yml` and `profile` to generate a real, personalized one.
