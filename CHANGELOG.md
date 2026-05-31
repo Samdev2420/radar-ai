@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Declarative sources config (`config/sources.example.yml`): a single `sources`
   list typed by `method` (`webfetch`, `websearch`, `github_trending`).
 - Digest settings config (`config/radar.config.yml.example`): `output_dir`,
-  `index_file`, `language`, `max_items`, `scoring`, `categories`.
+  `index_file`, `language`, `max_items`, `profile`, `scoring`, `categories`.
 - Fail-loud config validation and confined writes (output stays inside the
   project folder).
 - Prompt-injection guard: fetched web content is treated as untrusted data.

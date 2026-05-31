@@ -61,7 +61,7 @@ sources:
     tags: [dev, oss]
 ```
 
-Swap these for your own sources to watch any topic — the skill makes no assumptions about the domain. The full starter file is [config/sources.example.yml](config/sources.example.yml), and a sample output digest is in [examples/2026-05-30-digest-example.md](examples/2026-05-30-digest-example.md).
+Swap these for your own sources to watch any topic — the skill makes no assumptions about the domain. The full starter file is [config/sources.example.yml](config/sources.example.yml), and a sample output digest is in [examples/2026-05-31-digest-example.md](examples/2026-05-31-digest-example.md).
 
 ## Make it yours — the adaptive profile
 
@@ -82,7 +82,7 @@ With a profile set, radar does two extra things on every item:
 - **Explains it simply** — a jargon-free "What it is", written for someone who has never heard of the product.
 - **Connects it to you** — a "Why it matters to you" that names the actual project, stack, or interest affected ("this cuts your `my-web-app` token costs"), and ranks items that touch your projects to the top.
 
-Leave `profile` out and radar runs in generic mode. See a full personalized digest in [examples/2026-05-30-digest-example.md](examples/2026-05-30-digest-example.md).
+Leave `profile` out and radar runs in generic mode. See a full personalized digest in [examples/2026-05-31-digest-example.md](examples/2026-05-31-digest-example.md).
 
 ## Customization
 

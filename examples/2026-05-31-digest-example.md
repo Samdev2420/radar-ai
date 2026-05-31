@@ -1,4 +1,4 @@
-# Tech Watch — 2026-05-30
+# Tech Watch — 2026-05-31
 
 > Daily digest | 3 items | Scan OK
 > Tailored for: Solo founder building developer tools — projects: my-cli-tool (TypeScript/Node.js), my-web-app (React/Supabase)
