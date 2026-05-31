@@ -1,0 +1,14 @@
+# yamllint configuration for radar-ai.
+extends: default
+
+rules:
+  # Line length is a style choice; example configs and workflows use longer
+  # lines (URLs, descriptions) intentionally.
+  line-length: disable
+  # Allow both "true/false" and other truthy values without warnings.
+  truthy:
+    check-keys: false
+  # GitHub Actions workflows use "on:" which yamllint's truthy rule dislikes;
+  # disabling truthy key-checking above covers it. Document length is fine.
+  comments:
+    min-spaces-from-content: 1
