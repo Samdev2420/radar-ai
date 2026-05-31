@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `radar` Claude Code skill: scans a declarative list of sources and produces a
   deduplicated, scored Markdown tech-watch digest.
 - Config-driven, multi-domain engine with no hardcoded paths.
+- Adaptive `profile` (role, interests, projects): personalizes ranking and
+  writes a plain-language "What it is" plus a "Why it matters to you" that names
+  the specific project, stack, or interest each item affects.
 - Declarative sources config (`config/sources.example.yml`): a single `sources`
   list typed by `method` (`webfetch`, `websearch`, `github_trending`).
 - Digest settings config (`config/radar.config.yml.example`): `output_dir`,
